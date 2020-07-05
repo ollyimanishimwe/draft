@@ -19,7 +19,7 @@ class CreateVendorsTable extends Migration
             $table->text('address');
             $table->string('cp')->comment('Contact Person'); //Contact Person
             $table->string('phone');
-            $table->integer('active')->comment('0=Inactive, 1=Active, 2=Delete');//0=Inactive, 1=Active, 2=Delete
+            $table->integer('status')->comment('0=Inactive, 1=Active, 2=Delete');//0=Inactive, 1=Active, 2=Delete
             $table->integer('user_modified');
             $table->timestamps();
         });
