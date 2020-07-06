@@ -110,9 +110,18 @@ class VendorController extends Controller
                 ->addColumn('action', function($data){
                     $url_edit = url('master/vendor/'.$data->id.'/edit');
                     $url = url('master/vendor/'.$data->id);
-                    $view = " <a class='btn btn-action btn-primary' href='".$url."' title='View'><i class='nav-icon fas fa-eye'></i></a> ";
-                    $edit = " <a class='btn btn-action btn-warning' href='".$url_edit."' title='Edit'><i class='nav-icon fas fa-edit'></i></a> ";
-                    $delete = "<button data-url='".$url."' onclick='deleteData(this)' class='btn btn-action btn-danger' title='Delete'> <i class='nav-icon fas fa-trash-alt'></i> <button>";
+                    $view = " <a class='btn btn-action btn-primary' 
+                                href='".$url."' title='View'>
+                                <i class='nav-icon fas fa-eye'></i>
+                                </a> ";
+                    $edit = " <a class='btn btn-action btn-warning' 
+                                href='".$url_edit."' title='Edit'>
+                                <i class='nav-icon fas fa-edit'></i>
+                                </a> ";
+                    $delete = "<button data-url='".$url."' onclick='deleteData(this)' 
+                                class='btn btn-action btn-danger' title='Delete'> 
+                                <i class='nav-icon fas fa-trash-alt'></i> 
+                                </button>";
                 
                     return $view."".$edit."".$delete;
                 })

@@ -57,7 +57,7 @@
                         </div>
                         <div class="col-md-4">
                             
-                            <label for="name" class="col-sm-4 col-form-label">Contact Person</label>
+                            <label for="name" class="col-sm-6 col-form-label">Contact Person</label>
                             <div class="col-sm-8">
                                 <input type="text" name="contactPerson" class="form-control" id="contactPerson" placeholder="contactPerson">
                             </div>
