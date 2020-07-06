@@ -107,8 +107,8 @@
                             if(data=='1'){
                                 return '<span class="badge badge-success">Active</span>';
                             }
-                            if(data=='2'){
-                                return '<span class="badge badge-error">Inactive<span>';
+                            if(data=='0'){
+                                return '<span class="badge badge-danger">Inactive<span>';
                             }
                         },
                     },
